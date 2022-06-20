@@ -3,10 +3,12 @@ package com.trainer.courserunner.Application.mapdb.newimpl.data;
 import java.util.Objects;
 
 public class AddressVO {
+    final int id;
     final double latitude;
     final double longitude;
 
-    public AddressVO(double latitude, double longitude) {
+    public AddressVO(int id, double latitude, double longitude) {
+        this.id = id;
         this.latitude = latitude;
         this.longitude = longitude;
     }
